@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="icon" href="icon-192x192.png" />
+    <title>Suomi Services</title>
+    <style>
+        body { font-family: sans-serif; padding: 2rem; max-width: 600px; margin: auto; background: #f8f8f8; }
+        input, button { padding: 10px; margin: 5px 0; width: 100%; }
+        .result { margin-top: 20px; padding: 10px; background: #fff; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h1>Suomi Services</h1>
+    <p>Calculadora de preços para patchwork</p>
+    <input type="number" id="tecido" placeholder="Custo com tecido" />
+    <input type="number" id="linha" placeholder="Custo com linha" />
+    <input type="number" id="maoDeObra" placeholder="Mão de obra" />
+    <input type="number" id="energia" placeholder="Energia elétrica" />
+    <input type="number" id="tempo" placeholder="Tempo gasto (R$)" />
+    <button onclick="calcular()">Calcular preço de venda</button>
+    <div class="result" id="resultado"></div>
+    <script src="app.js"></script>
+</body>
+</html>
